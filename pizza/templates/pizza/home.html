@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<title>Nandias Garden</title>
+	</head>
+	<body>
+		{% extends 'pizza/base.html' %} {% block 'body' %}
+		<div class="text-center">
+			{% load static %}
+			<img
+				src="{% static 'nandias_garden.jpg' %}"
+				class="img-fluid"
+				alt="Nandia's Garden"
+			/>
+		</div>
+		{% endblock %}
+	</body>
+</html>
